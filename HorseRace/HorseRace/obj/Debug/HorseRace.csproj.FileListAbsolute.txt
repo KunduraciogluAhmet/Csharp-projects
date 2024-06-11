@@ -8,3 +8,8 @@ E:\Projects\Csharp\HorseRace\HorseRace\bin\Debug\HorseRace.exe
 E:\Projects\Csharp\HorseRace\HorseRace\bin\Debug\HorseRace.pdb
 E:\Projects\Csharp\HorseRace\HorseRace\obj\Debug\HorseRace.exe
 E:\Projects\Csharp\HorseRace\HorseRace\obj\Debug\HorseRace.pdb
+E:\Projects\Csharp\HorseRace\HorseRace\bin\Debug\Interop.WMPLib.dll
+E:\Projects\Csharp\HorseRace\HorseRace\bin\Debug\AxInterop.WMPLib.dll
+E:\Projects\Csharp\HorseRace\HorseRace\obj\Debug\Interop.WMPLib.dll
+E:\Projects\Csharp\HorseRace\HorseRace\obj\Debug\AxInterop.WMPLib.dll
+E:\Projects\Csharp\HorseRace\HorseRace\obj\Debug\HorseRace.csproj.ResolveComReference.cache

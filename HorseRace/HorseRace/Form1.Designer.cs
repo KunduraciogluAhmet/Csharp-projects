@@ -39,9 +39,11 @@
             this.Horse3 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.Horse1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Horse2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Horse3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +51,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(1, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(835, 23);
+            this.label1.Size = new System.Drawing.Size(845, 23);
             this.label1.TabIndex = 0;
             // 
             // label2
@@ -57,7 +59,7 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(1, 214);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(835, 23);
+            this.label2.Size = new System.Drawing.Size(845, 23);
             this.label2.TabIndex = 1;
             // 
             // label3
@@ -65,21 +67,21 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(1, 345);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(835, 23);
+            this.label3.Size = new System.Drawing.Size(845, 23);
             this.label3.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(832, 9);
+            this.label4.Location = new System.Drawing.Point(842, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 410);
+            this.label4.Size = new System.Drawing.Size(20, 410);
             this.label4.TabIndex = 3;
             // 
             // Horse1
             // 
             this.Horse1.Image = ((System.Drawing.Image)(resources.GetObject("Horse1.Image")));
-            this.Horse1.Location = new System.Drawing.Point(4, 54);
+            this.Horse1.Location = new System.Drawing.Point(4, 28);
             this.Horse1.Name = "Horse1";
             this.Horse1.Size = new System.Drawing.Size(100, 50);
             this.Horse1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -89,7 +91,7 @@
             // Horse2
             // 
             this.Horse2.Image = ((System.Drawing.Image)(resources.GetObject("Horse2.Image")));
-            this.Horse2.Location = new System.Drawing.Point(4, 187);
+            this.Horse2.Location = new System.Drawing.Point(4, 164);
             this.Horse2.Name = "Horse2";
             this.Horse2.Size = new System.Drawing.Size(100, 50);
             this.Horse2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -99,7 +101,7 @@
             // Horse3
             // 
             this.Horse3.Image = ((System.Drawing.Image)(resources.GetObject("Horse3.Image")));
-            this.Horse3.Location = new System.Drawing.Point(4, 318);
+            this.Horse3.Location = new System.Drawing.Point(4, 292);
             this.Horse3.Name = "Horse3";
             this.Horse3.Size = new System.Drawing.Size(100, 50);
             this.Horse3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -123,12 +125,23 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(105, 371);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(114, 72);
+            this.axWindowsMediaPlayer1.TabIndex = 8;
+            this.axWindowsMediaPlayer1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(907, 484);
+            this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Horse3);
             this.Controls.Add(this.Horse2);
@@ -142,6 +155,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Horse1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Horse2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Horse3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -157,5 +171,6 @@
         private System.Windows.Forms.PictureBox Horse3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer timer1;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }

@@ -22,6 +22,16 @@ namespace HorseRace
         private void button1_Click(object sender, EventArgs e)
         {
             timer1.Start();
+            string filePath = System.IO.Path.Combine(Application.StartupPath, "horse.mp3");
+            if (System.IO.File.Exists(filePath))
+            {
+                axWindowsMediaPlayer1.URL = filePath;
+                axWindowsMediaPlayer1.Ctlcontrols.play();
+            }
+            else
+            {
+                MessageBox.Show("File not found: " + filePath);
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -40,16 +50,20 @@ namespace HorseRace
                 if (Horse1.Left >= label4.Left - Horse1.Width)
                 {
                     winner = "Horse 1";
+
                 }
                 else if (Horse2.Left >= label4.Left - Horse2.Width)
                 {
                     winner = "Horse 2";
+
                 }
                 else if (Horse3.Left >= label4.Left - Horse3.Width)
                 {
                     winner = "Horse 3";
+
                 }
                 MessageBox.Show($"{winner} wins!");
+                axWindowsMediaPlayer1.Ctlcontrols.stop();
             }
         }
     }
